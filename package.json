@@ -16,7 +16,7 @@
   "scripts": {
     "build": "rm -rf dist/* && rollup -c && api-extractor run && rm -rf dist/src",
     "test": "jest",
-    "lint": "eslint ./",
+    "lint": "eslint --ext .ts src",
     "prepare": "yarn build && yarn test"
   },
   "devDependencies": {
